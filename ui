@@ -1,0 +1,29 @@
+from service.FilmService import FilmService
+
+class Consola:
+    def __init__(self, filmService: FilmService):
+        self.__filmService = filmService
+
+    def printMeniu(self):
+        print("1.Adauga film")
+        print("2.Modifica film")
+        print("3.Stege film")
+        print("x.Iesire")
+
+    def meniu(self):
+        while True:
+            self.printMeniu()
+            optiune = input("Dati optiunea:")
+            if optiune == "1":
+                ...
+            elif optiune == "2":
+                ...
+            elif optiune == "3":
+                ...
+            elif optiune == "x":
+                break
+            else:
+                print("Optiune gresita")
+
+#am ramas la 46:23
+
